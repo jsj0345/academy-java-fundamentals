@@ -148,6 +148,8 @@ public class B_For {
 		}
 		
 		System.out.println("1부터 입력한 값까지 모두 더한 결과 : " + sum);
+		
+		sc.close(); 
 	}
 	
 	public void method06() {
@@ -165,7 +167,42 @@ public class B_For {
 			System.out.println(number + " X " + i + " = " + (number * i));
 		}
 		
+		sc.close(); 
+	}
+	
+	//중첩 반복문 배워보기
+	//for문을 중첩해서 사용해보자.
+	public void method07() {
+		//구구단을 2단부터 9단까지 모두 출력해보기
 		
+		//1부터 9까지 순차적으로 증가하는 반복문 
+		for(int i = 1; i<=9; i++) {
+			System.out.println(2 + "X" + i + "=" + (2*i));
+		}
+		
+		for(int i = 2; i < 10; i++) {
+			for(int j = 1; j < 10; j++) {
+				System.out.println(i + "X" + j + "=" + (i*j));
+			}
+		}
+	}
+	
+	public void method08() {
+		//스쿼트 15회씩 5세트를 해보자.
+		//각 세트별로 OO세트 시작! 출력하고
+		//ex) 스쿼트 1회 ... 스쿼트 15회 와 같이 출력해보기
+		//세트가 끝나면 OO세트 끝! 을 출력하기
+		
+		for(int i = 1; i < 6; i++) {
+			
+			System.out.println(i + "세트 시작!");
+			
+			for(int j = 1; j < 16; j++) {
+				System.out.println("스쿼트 " + j +"회");
+			}
+			
+			System.out.println(i + "세트 끝!");
+		}
 	}
 
 }

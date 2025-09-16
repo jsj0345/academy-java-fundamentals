@@ -2,6 +2,10 @@ package com.kh.chap02.run;
 
 import com.kh.chap02.loop.A_While;
 import com.kh.chap02.loop.B_For;
+import com.kh.chap02.loop.C_DoWhile;
+
+// ctrl + alt + 아래키는 아래로 복제 (인텔리제이는 ctrl + d)
+// ctrl + alt + 위키는 위로 복제 
 
 public class Run {
 	
@@ -19,7 +23,17 @@ public class Run {
 		//b.method03(); 
 		//b.method04();
 		//b.method05();
-		b.method06();
+		//b.method06();
+		//b.method07();
+		//b.method08();
+		
+		C_DoWhile c = new C_DoWhile();
+		//c.method01();
+		//c.method02();
+		//c.method03();
+		//c.method04();
+		c.method05(); 
+				
 	}
 
 }
