@@ -215,6 +215,34 @@ public class ArrayPractice {
 		System.out.println(str);
 	}
 	
+	public void practice11() { // 주민번호 뒷자리 성별구분 숫자자리부터 *로 출력해보자
+		Scanner sc = new Scanner(System.in);
+		System.out.print("주민등록포함(-포함) : ");
+		String number = sc.nextLine(); 
+		
+		int k = 0; 
+		
+		
+		char[] char_Array = new char[number.length()];
+		
+		for(int i = 0; i < number.length(); i++) {
+			char_Array[i] = number.charAt(i);
+		}
+	
+		for(int i = 0; i < char_Array.length; i++) {
+			if(char_Array[i] == '-') {
+				k = i;
+			} 
+			
+			if(i>=k+2 && k != 0) { // 여기서 k != 0이라는 조건을 안걸어두면 인덱스 2번부터 *로 고치기 때문에 에러 발생 위험. 
+				char_Array[i] = '*';
+			}
+		
+		}
+		
+		System.out.println(char_Array);
+	}
+	
 	
 	
 	
