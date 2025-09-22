@@ -9,12 +9,12 @@ public class Member {
 	private String phone;
 	private String email;
 	
-	public Member() {
+	public Member() { // 기본 생성자 
 		
 	}
 	
 	public void changeName(String name) {
-		this.memberName = name; 
+		this.memberName = name; // 멤버변수에 매개변수 초기화 
 	}
 	
 	public void printName() {
