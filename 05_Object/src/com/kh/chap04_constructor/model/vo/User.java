@@ -58,9 +58,26 @@ public class User {
 		this.userName = userName; 
 	}
 	
+
+	//아이디,비밀번호,나이,성별을 입력받는 매개변수 생성자를 정의해보자
+	//이때 아이디,비밀번호 두개만 입력받는 매개변수 생성자를 추가 정의하고
+	//해당 생성자를 내부 호출하는 방식으로 매개변수 4개짜리 생성자를 만들어보세요. 
+	public User(String userId, String userPwd, int age, char gender) {
+		this(userId, userPwd);
+		this.age = age;
+		this.gender = gender; 
+	}
+	
+	public User(String userId, String userPwd) {
+		this.userId= userId;
+		this.userPwd = userPwd; 
+    }
+	
 	//전달값이 있는 매개변수 생성자 작성해보기
 	public User(String userId, String userPwd, String userName, int age, char gender) {
 		//매개 변수로 받아온 데이터를 각 필드에 초기화해주기 
+		//User u = new User("","","");
+		//내부 생성자 호출 구문은 해당 구문에서 가장 위에 있어야한다.(객체가 생성되고 다른 필드가 초기화되야 하기 때문) 
 		this.userId = userId;
 		this.userPwd = userPwd;
 		this.userName = userName;
